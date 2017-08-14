@@ -1,6 +1,6 @@
 PODS:
   - AsyncDisplayKit/Core (2.2)
-  - SDWebImage/Core (4.0.0)
+  - SDWebImage/Core (~> 4.0)
   - WebASDKImageManager (3.0.0):
     - AsyncDisplayKit/Core (~> 2.0)
     - SDWebImage/Core (~> 4.0)
