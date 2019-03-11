@@ -79,7 +79,7 @@
     if (!URL) {
         NSString *domain = [NSBundle bundleForClass:[self class]].bundleIdentifier;
         NSString *description = @"The URL of the image to download is unspecified";
-        completion(nil, [NSError errorWithDomain:domain code:0 userInfo:@{NSLocalizedDescriptionKey: description}], nil);
+        completion(nil, [NSError errorWithDomain:domain code:0 userInfo:@{NSLocalizedDescriptionKey: description}], nil, nil);
         return nil;
     }
 
@@ -96,7 +96,7 @@
         }
         
         dispatch_async(callbackQueue ?: dispatch_get_main_queue(), ^{
-            completion([SDWebASDKImageContainer containerForImage:image], error, weakOperation);
+            completion([SDWebASDKImageContainer containerForImage:image], error, nil, weakOperation);
         });
     }];
     weakOperation = operation;

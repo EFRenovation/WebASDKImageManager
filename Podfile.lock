@@ -1,22 +1,38 @@
 PODS:
-  - AsyncDisplayKit/Core (2.2)
-  - SDWebImage/Core (~> 4.0)
+  - SDWebImage (4.4.1):
+    - SDWebImage/Core (= 4.4.1)
+  - SDWebImage/Core (4.4.1)
+  - Texture/Core (2.8)
   - WebASDKImageManager (3.0.0):
-    - AsyncDisplayKit/Core (~> 2.0)
     - SDWebImage/Core (~> 4.0)
+    - Texture/Core (~> 2.0)
 
 DEPENDENCIES:
+  - SDWebImage (= 4.4.1)
+  - "Texture/Core (from `git@github.com:SpiciedCrab/Texture.git`, branch `keepingHierarchy`)"
   - WebASDKImageManager (from `.`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SDWebImage
+
 EXTERNAL SOURCES:
+  Texture:
+    :branch: keepingHierarchy
+    :git: "git@github.com:SpiciedCrab/Texture.git"
   WebASDKImageManager:
     :path: "."
 
+CHECKOUT OPTIONS:
+  Texture:
+    :commit: 2b6f4d2aa1daf27e24ebd159e489bb2527842afd
+    :git: "git@github.com:SpiciedCrab/Texture.git"
+
 SPEC CHECKSUMS:
-  AsyncDisplayKit: 1585f6cd0531ae9b30476f5912f577b73ebcb0e4
-  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  WebASDKImageManager: f4d85fde2ce50e97ad697a65d0e41ca5756cb292
+  SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
+  Texture: 3ac8be7a23e3b478fa1f227bf7a4da083806038d
+  WebASDKImageManager: 0fb2d130ce83cc39fd28635c4daf74d4711eeb44
 
-PODFILE CHECKSUM: 7b34a654865002f9dd598539b1b1c3d7df04a62e
+PODFILE CHECKSUM: c61a4854097f3a35255516a2abf6314dd43ac812
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.6.1
